@@ -20,7 +20,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100%;
     justify-content: flex-start;
 }
 
@@ -114,13 +114,37 @@ h6{
     padding: 1%;
 }
 
+.infoCard a {
+    border-bottom: 5px solid var(--jeanBlue);
+}
+
+.infoCard p a {
+    border-bottom: none;
+}
+
 .workCard {
     display: flex;
     flex-flow: column wrap;
     flex: 100px;
     padding: 20px;
     position: relative;
-    
+}
+
+.workCard {
+
+}
+
+.me {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/Screenshot_73.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.subTitle {
+
 }
 
 /*This is the id category*/
