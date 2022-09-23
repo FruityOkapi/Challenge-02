@@ -8,15 +8,15 @@
 
 
 * {
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: 200;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 600;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #EEE2DF;
+    background-color: white;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -42,6 +42,11 @@ h2 {
     color: var(--grayBlue);
 }
 
+h3 {
+    font-size: 45px;
+    text-decoration: underline solid var(--grayBlue);
+}
+
 img {
     height: 400px;
     width: 500px;
@@ -53,7 +58,6 @@ ul {
 
 li {
     display: inline-block;
-    float: right;
     padding-top: 10px;
     padding-bottom: 15px;
     margin-right: 30px;
@@ -77,62 +81,22 @@ footer {
     background-color: #4b4e6d;
 }
 
+/* This is the main container that will have 2 containers in it side by side. One slightly smaller width than the other
+    Then set the cards in the left section at certain pixel heights to match the other container that show the section
+    This is for simplicity sake and to not have a panic attack lol. */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
 /*Placeholder for the copywrite*/
 h6{
     font-size: 16px;
     color: var(--aWhite)
 }
 
-/*This is the classes category*/
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.justify-right{
-    justify-content: right;
-}
-
-.infoCard {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    min-height: 100%;
-    min-width: 100%;
-    padding: 20px;
-}
-
-.infoCard h2 {
-    border-right: 5px solid var(--jeanBlue);
-
-}
-
-.infoCard ul {
-    justify-content: right;
-    padding: 1%;
-}
-
-.infoCard a {
-    border-bottom: 5px solid var(--jeanBlue);
-}
-
-.infoCard p a {
-    border-bottom: none;
-}
-
-.workCard {
-    display: flex;
-    flex-flow: column wrap;
-    flex: 100px;
-    padding: 20px;
-    position: relative;
-}
-
-.workCard {
-
-}
 
 .me {
     height: 800px;
@@ -143,31 +107,47 @@ h6{
     background-position: center;
 }
 
-.subTitle {
+/* This class is for the left and right sections of the main flexbox. Named for understanding the formatting */
 
+.mainFlexBox {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 70%;
+    margin: 10px;
+    /* REMOVE THIS. THE NEXT TWO PROPERTIES ARE PURELY FOR VISUAL REP */
+    /* min-height: 1200px;
+    border: solid 5px #3d3d3d; */
 }
 
-/*This is the id category*/
-#text-right {
-    text-align: right;
+/* This class with this pseduo selector will allow me to edit different sections individually */
+.mainFlexBox:nth-of-type(1) {
+    flex: 1 0 20%;
 }
 
-#text-left {
-    text-align: left;
+/* This class is for the titles on the left side */
+.titleFlexBox{
+    display: flex;
+    flex: 1 0 0;
+    min-height: 300px;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
 }
 
-#text-center {
-    text-align: center;
+/* This is for the body of the main section! */
+.bodyFlexBox {
+    display: flex;
+    flex: 1;
+    border-left: solid 5px var(--jeanBlue);
+    margin: 20px;
+    padding: 10px 0 10px 10px;
+    font-size: 24px;
 }
 
-#black {
-    color: var(--aBlack)
+.bodyFlexBox p {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-#float-left {
-    float: left;
-}
-
-#float-right {
-    float: right;
-}
+/* This is the work buttons */

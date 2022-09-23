@@ -6,73 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>My Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,600;1,400&display=swap');
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Portfolio</h1>
     <nav>
+        <h1>Joseph Simmerman</h1>
         <ul>
-            <li><a href="#contactMe">Contact Me</a></li>
-            <li><a href="#link">Resume</a></li>
-            <li><a href="#work">Work</a></li>
             <li><a href="#aboutMe">About me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
 
         </ul>
     </nav>
 
+    <header>
+        <div class="me"></div>
     </header>
-    <div class="me"></div>
+
+    
+
     <main>
-    <div class="row justify-right">
-        <div>
-            <section class="infoCard">
-                <h2>About Me</h2>
-                <p>Hey! My name is Joesph Simmerman. I usually go by Ben, my middle name. I am a full stack developer that specializes in HTML, CSS, and JavaScript. I graduated a boot camp at the University of Arizona so I don't have real world experience yet but I think I can keep up! I learned git flow, the three main languages, git bash, and so much more. My work is below so if you want to see my skill level check it out! I love playing video games on my free time. My favorite games have to be The Binding of Isaac: Rebirth and League of Legends. I also have a very cute puppy named <a href="https://cdn.discordapp.com/attachments/571905269236367362/1016487237728358420/68411255686__295E9AE9-EF40-47B9-B9A9-94262E1639EC.jpg">Luna!</a></p>
-            </section>
-        </div>
         
-  
-            <section class="infoCard">
-                <h2>Work</h2>
-                <div class="workCard">
-                    <h3>Weather Reporter</h3>
-                    <img src="./assets/images/How-to-read-a-surf-report-thewaveshakc.com-min.jpg" alt="">
-                </div>
+        <section class="mainFlexBox">
 
-                <div class="workCard">
-                    <h3>LED Wall</h3>
-                    <img src="./assets/images/LED-Wall-Benefits.webp" alt="">
-                </div>
+            <div id="aboutMe" class="titleFlexBox">
+                <h3>About Me</h3>
+            </div>
 
-                <div class="workCard">
-                    <h3>Calculator</h3>
-                    <img src="./assets/images/calculatorillustration.jpg" alt="">
-                </div>
+            <div id="work" class="titleFlexBox">
+                <h3>Work</h3>
+            </div>
 
-                <div class="workCard">
-                    <h3>Rock Paper Scissors</h3>
-                    <img src="./assets/images/Researchers-Tell-Us-The-Strategies-To-Win-Rock-Paper-Scissors1.jpg" alt="">
-                </div>
+            <div id="resume" class="titleFlexBox">
+                <h3>Resume</h3>
+            </div>
 
-                <div class="workCard ">
-                    <h3>Insult Generator</h3>
-                    <img src="./assets/images/kids-pointing-at-girl-e1533661436156.webp" alt="">
-                </div>
+            <div id="contactMe" class="titleFlexBox">
+                <h3>Contact Me</h3>
+            </div>
+        </section>
 
-            </section>
-     
-         
-       
-            <section class="infoCard">
-                <h2>Contact Me</h2>
-                <ul>
-                    <li><a id="black" href="#">(555)555-5555</a></li>
-                    <li><a id="black" href="josephbsimmerman@gmail.com">josephbsimmerman@gmail.com</a></li>
-                    <li><a id="black" href="https://github.com/FruityOkapi">Github</a></li>
-                    <li><a id="black" href="https://open.spotify.com/user/infectedasylum">Spotify</a></li>
-                </ul>
-            </section>
-        </div>
+        <section class="mainFlexBox">
+
+            <div id="about" class="bodyFlexBox">
+                <p>Hi and welcome to my bio! My name is Joseph Simmerman. I am a relatively new full stack developer that knows HTML, CSS, and JavaScript. I really enjoy playing video games, solving problems, and energy drinks. I have a very cute dog named Luna! If you would like to see her, then click on my resume! I don't have a resume so right now it is a link to my dog. :)</p>
+            </div>
+
+            <div id="works" class="bodyFlexBox">
+
+            </div>
+
+            <div id="resum" class="bodyFlexBox">
+
+            </div>
+
+            <div id="contact" class="bodyFlexBox">
+
+            </div>
+
+        </section>
+           
     </main>
 
     <footer>
