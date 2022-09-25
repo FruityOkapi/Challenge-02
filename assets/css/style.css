@@ -41,6 +41,7 @@ li {
     display: inline;
 }
 
+
 /* I set the background img in CSS cause it fits easier and adjusts to the vf */
 header {
     height: 400px;
@@ -59,7 +60,7 @@ footer {
 
 /* This sets the max width of the content so it doesn't spread out too far on desktop */
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 35px;
 }
@@ -96,61 +97,105 @@ main .container {
     flex-direction: column;
 }
 
-.titleBox {
-    display: flex;
-    min-width: 20%;
-    
-}
-
-.titleBox h2 {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-.box {
-    display: flex;
-
-    flex-grow: 1;
-    justify-content: start;
-    padding: 0 16px;
-}
-
-.box p {
-    
-}
-
-.box a {
-    color: var(--aBlack);
-}
-
-.box ul {
-    display: flex;
-    
-}
-
-.box ul li {
-    margin-left: 10px;
-    font-size: larger;
-}
-
-.box h3 {
-    position: absolute;
-    padding: 10px;
-    border: 5px solid var(--jeanBlue);
-    background: var(--grayBlue);
-}
-
-.box img {
-
-}
-
 .bodyBox {
     display: flex;
-    justify-content: space-between;
     margin: 20px 0;
 }
 
-.subtBox {
-    border-bottom: 3px solid var(--aBlack);
+.bodyBox p {
+    padding-left: 16px;
+}
+
+.bodyBox h2 {
+    min-width: 162px;
+}
+
+.bodyBox li {
+    padding: 0 20px;
+}
+
+.bodyBox a {
+    color: white;
+}
+
+.bodyBox:nth-of-type(3) a {
+    color: black;
+    font-size: x-large;
+    text-decoration: underline var(--jeanBlue);
+}
+
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 16px;
+}
+
+.box a {
+    border: 5px solid var(--grayBlue);
+}
+
+.item {
+    height: 300px;
+    color: white;
+    margin: 10px 0 ;
+    background: var(--grayBlue);
+}
+
+.item:nth-of-type(1) {
+    background-image: url(../images/study.png);
+    flex-grow: 1 0 0;
+    width: 100%;
+}
+
+.item:nth-of-type(2) {
+    background-image: url(../images/weather.png);
+    width: 45%;
+}
+
+.item:nth-of-type(3) {
+    background-image: url(../images/insult.png);
+    width: 45%;
+}
+
+.item:nth-of-type(4) {
+    background-image: url(../images/rps.png);
+    width: 45%;
+}
+
+.item:nth-of-type(5) {
+    background-image: url(../images/luna.png);
+    width: 45%;
+}
+
+#foot {
+    text-align: right;
+    color: var(--aWhite);
+    padding-right: 16px;
+}
+
+@media (max-width: 768px) {
+  
+    .box {
+     flex-direction: column;
+    }
+
+    .item:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .item:nth-of-type(3) {
+        width: 100%;
+    }
+
+    .item:nth-of-type(4) {
+        width: 100%;
+    }
+
+    .item:nth-of-type(5) {
+        width: 100%;
+    }
   }
+  
