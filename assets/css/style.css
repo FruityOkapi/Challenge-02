@@ -1,188 +1,156 @@
 :root {
     --aBlack: #3d3d3d;
-    --aWhite: #f5f5f5;
-    --jeanBlue: #4b4e6d;
-    --iceBlue: #84dcc6;
+    --aWhite: #faefef;
     --grayBlue: #95a3b3;
+    --jeanBlue: #4b4e6d;
 }
 
 /* I learned how to add fonts with googleapi from this site:
     https://developers.google.com/fonts/docs/getting_started */
 * {
-    font-family: 'Archivo Narrow', sans-serif;
-    font-weight: 600;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-body {
-    background-color: white;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    justify-content: flex-start;
-}
-
-nav {
-    background-color: var(--jeanBlue);
-    color: var(--aBlack);
-}
-
-header{
-    background-color: var(--jeanBlue);
-    color: var(--aWhite);
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 600;
 }
 
 h1 {
-    padding-top: 15px;
-    padding-left: 20px;
-    color: var(--aWhite);
-    font-size: 32px;
+    font-size: xx-large;
 }
 
 h2 {
-    padding-right: 30px;
-    width: 20%;
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--grayBlue);
-}
-
-h3 {
-    font-size: 45px;
+    font-size: x-large;
     text-decoration: underline solid var(--grayBlue);
     border-right: solid 5px var(--jeanBlue);
-    min-width: 250px;
 }
 
 img {
 
 }
 
-ul {
-    list-style-type: none
-}
-
-li {
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    margin-right: 30px;
-    font-size: 20px;
-    float: right;
-}
-
-li a {
-    color: #f5f5f5;
-}
-
 a {
     text-decoration: none;
 }
 
-p {
-    padding: 10px;
-    max-width: 80%;
+ul{
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+/* I set the background img in CSS cause it fits easier and adjusts to the vf */
+header {
+    height: 400px;
+    background: url(../images/Screenshot_73.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    background: var(--aWhite);
 }
 
 footer {
     background-color: #4b4e6d;
 }
 
-/* This is the main container that will have 2 containers in it side by side. One slightly smaller width than the other
-    Then set the cards in the left section at certain pixel heights to match the other container that show the section
-    This is for simplicity sake and to not have a panic attack lol. */
+/* This sets the max width of the content so it doesn't spread out too far on desktop */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 35px;
+}
 
-main {
+.navbar {
+    background: var(--jeanBlue);
+    color: var(--aWhite);
+    height: 60px;
+}
+
+.navbar .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 100%;
+}
+
+.navbar a {
+    color: var(--aWhite);
+}
+
+.navbar ul {
     display: flex;
-    flex-direction: row;
-    flex: 1;
+    
 }
 
-/*Placeholder for the copywrite*/
-h6{
-    font-size: 16px;
-    color: var(--aWhite)
+.navbar ul li {
+    margin-left: 10px;
+    font-size: larger;
 }
 
-
-.me {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/Screenshot_73.png");
-    background-size: cover;
-    background-position: center;
-}
-
-/* This class is for the left and right sections of the main flexbox. Named for understanding the formatting */
-
-.mainFlexBox {
+main .container {
     display: flex;
     flex-direction: column;
-    flex: 1 0 70%;
-    margin: 10px;
-    /* REMOVE THIS. THE NEXT TWO PROPERTIES ARE PURELY FOR VISUAL REP */
-    /* min-height: 1200px;
-    border: solid 5px #3d3d3d; */
 }
 
-/* This class with this pseduo selector will allow me to edit different sections individually */
-.mainFlexBox:nth-of-type(1) {
-    flex: 1 0 20%;
-}
-
-/* This is for the body of the main section! */
-.bodyFlexBox {
+.titleBox {
     display: flex;
-    flex: 1 0 0;
-    margin: 20px;
-    padding: 10px 0 10px 10px;
-    font-size: 24px;
+    min-width: 20%;
+    
 }
 
-.bodyFlexBox p {
+.titleBox h2 {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.box {
     display: flex;
+
+    flex-grow: 1;
     justify-content: start;
-    align-items: center;
+    padding: 0 16px;
 }
 
-.bodyFlexBox h3,
-h4 {
+.box p {
+    
+}
+
+.box a {
+    color: var(--aBlack);
+}
+
+.box ul {
     display: flex;
-    justify-content: right;
-    align-items: center;
-    padding-right: 15px;
+    
 }
 
-.bodyFlexBox h4 {
-    padding-left: 15px;
+.box ul li {
+    margin-left: 10px;
+    font-size: larger;
 }
 
-.bodyFlexBox a {
-    text-decoration: underline solid var(--grayBlue);
-    color: var(--aBlack)
+.box h3 {
+    position: absolute;
+    padding: 10px;
+    border: 5px solid var(--jeanBlue);
+    background: var(--grayBlue);
 }
 
-.workBox {
+.box img {
+
+}
+
+.bodyBox {
     display: flex;
-
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-#text-right {
-    text-align: right;
-}
-
-#text-left {
-    text-align: left;
-}
-
-#size {
-    font-size: 26px;
-}
-
-#pleft {
-    padding-left: 15px;
-}
+.subtBox {
+    border-bottom: 3px solid var(--aBlack);
+  }

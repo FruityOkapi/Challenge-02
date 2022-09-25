@@ -1,92 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>My Portfolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,600;1,400&display=swap');
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>My Portfolio</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,600;1,400&display=swap');
+        </style>
+    </head>
 <body>
-    <nav>
-        <h1>Joseph Simmerman</h1>
-        <ul>
-            <li><a href="#aboutMe">About me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contactMe">Contact Me</a></li>
-
-        </ul>
+    <nav class="navbar">
+    <div  class="container">
+        <h1>Joseph's Portfolio</h1>
+            <ul>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
+            </ul>
+    </div>    
     </nav>
 
     <header>
-        <div class="me"></div>
+        <div class="container">
+            <h5>*This is not me but my avatar!*</h5>
+        </div>        
     </header>
-
     
-
     <main>
-        
-      
-        <section class="mainFlexBox">
+        <div class="container">
+            <section class="bodyBox" id="aboutMe">
+                <div class="titleBox">
+                    <h2>About Me</h2>
+                </div>
+                <div class="box">
+                    <p>Hi and welcome to my bio! My name is Joseph Simmerman. I am a relatively new full stack developer that knows HTML, CSS, and JavaScript. I really enjoy playing video games, solving problems, and energy drinks. I have a very cute dog named Luna! Please feel free to contact me anytime! :)</p>
+                </div>
+            </section>
+            
+            <section class="bodyBox" id="projects">
+                <div class="titleBox">
+                    <h2>Projects</h2>
+                </div>
+                
+                <div>
+                    <div class="box">
+                        <h3>Study Guide</h3>
+                        <!-- <a href="https://github.com/FruityOkapi/prework-study-guide"><img src="./assets/images/study.png" alt="hand on a mouse between two lit up keyboards" style="width:100%"></a> -->
+                    </div>
+                    <div class="box">
+                        <h3>Challenge 01</h3>
+                        <!-- <a href="https://github.com/FruityOkapi/Challenge-02"><img src="./assets/images/weather.png" alt="surfers on a wave out at sea with mountains in the distance"></a> -->
+                    </div>
+                    <div class="box">
+                        <h3>Insult Generator</h3>
+                        <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./assets/images/insult.png" alt="child being pointed and laughed at by other children"></a> -->
+                    </div>
+                    <div class="box">
+                        <h3>Rock Paper Scissors</h3>
+                        <!-- <a href="https://www.youtube.com/watch?v=pFaExcs_MgQ"><img src="./assets/images/rps.png" alt="people playing rock paper scissors. left played rock. right played scissors"></a> -->
+                    </div>
+                    <div class="box">
+                        <h3>WIP</h3>
+                        <!-- <a href="https://i.imgur.com/ZB8HcOH.mp4"><img src="./assets/images/luna.png" alt="picture of the cutest puppy sitting in some grass"></a> -->
+                    </div>
+                </div>
+            </section>
 
-            <div id="aboutMe" class="bodyFlexBox">
-                <h3>About Me</h3>
-                <p>Hi and welcome to my bio! My name is Joseph Simmerman. I am a relatively new full stack developer that knows HTML, CSS, and JavaScript. I really enjoy playing video games, solving problems, and energy drinks. I have a very cute dog named Luna! If you would like to see her, then click on my resume! I don't have a resume so right now it is a link to my dog. :)</p>
-            </div>
-
-            <div id="work" class="bodyFlexBox">
-                <h3>Work</h3>
-                <div class="workBox" id="WeatherReporter">
-                    <!-- <img src="./assets/images/How-to-read-a-surf-report-thewaveshakc.com-min.jpg" alt=""> -->
+            <section class="bodyBox" id="contactMe">
+                <div class="titleBox">
+                    <h2>Contact Me</h2>
                 </div>
 
-                <div class="workBox" id="InsultGen">
-
+                <div class="box">
+                    <ul>
+                        <li><a href="#">(123)456-7890</a></li>
+                        <li><a href="#">josephbsimmerman@gmail.com</a></li>
+                        <li><a href="https://github.com/FruityOkapi">Github</a></li>
+                        <li><a href="https://open.spotify.com/user/infectedasylum">Spotify</a></li>
+                    </ul>
                 </div>
-
-                <div class="workBox" id="RPS">
-
-                </div>
-
-            </div>
-
-            <div id="resume" class="bodyFlexBox">
-                <h3>Resume</h3>
-                <h4><a href="https://cdn.discordapp.com/attachments/571905269236367362/1016487237728358420/68411255686__295E9AE9-EF40-47B9-B9A9-94262E1639EC.jpg">My click here for my "resume"! ;)</a></h4>
-            </div>
-
-            <div id="contactMe" class="bodyFlexBox">
-                <h3>Contact Me</h3>
-                <ul id="pleft">
-                    <li>
-                        <a id="size" href="https://open.spotify.com/user/infectedasylum">Spotify</a>
-                    </li>
-
-                    <li>
-                        <a id="size" href="https://github.com/FruityOkapi">Github</a>
-                    </li>
-
-                    <li>
-                        <a id="size" href="#">(605)475-6961</a>
-                    </li>
-
-                    <li>
-                        <a id="size" href="#">josephbsimmerman@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
-
-        </section>
-           
+            </section>
+        </div>
     </main>
 
     <footer>
-        <h6 id="text-right">© 2022 Joseph Simmerman.</h6>
+        <p>© 2022 Joseph Simmerman.</p>
     </footer>
-    
 </body>
 </html>
