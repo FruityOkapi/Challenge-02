@@ -126,6 +126,13 @@ main .container {
     color: white;
 }
 
+/* This gives the subtitle on the img stroke and a shadow */
+.bodyBox:nth-of-type(2) a {
+    font-size: large;
+	-webkit-text-stroke: 1px #282828;
+	text-shadow: 0px 2px 2px #282828;
+}
+
 /* This sets those properties to the 3rd body box only */
 .bodyBox:nth-of-type(3) a {
     color: black;
