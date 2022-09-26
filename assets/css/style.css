@@ -3,6 +3,7 @@
     --aWhite: #faefef;
     --grayBlue: #95a3b3;
     --jeanBlue: #4b4e6d;
+    --hilit: rgb(47, 140, 184);
 }
 
 /* I learned how to add fonts with googleapi from this site:
@@ -189,6 +190,10 @@ main .container {
 .item:nth-of-type(5) {
     background-image: url(../images/luna.png);
     width: 45%;
+}
+
+.item:hover {
+    box-shadow: 10px 5px 5px var(--hilit);
 }
 
 #foot {
