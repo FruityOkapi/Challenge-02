@@ -25,10 +25,6 @@ h2 {
     border-right: solid 5px var(--jeanBlue);
 }
 
-img {
-
-}
-
 a {
     text-decoration: none;
 }
@@ -65,66 +61,79 @@ footer {
     padding: 0 35px;
 }
 
+/* This sets the background of the navbar */
 .navbar {
     background: var(--jeanBlue);
     color: var(--aWhite);
     height: 60px;
 }
 
+/* This adjusts the container in the navbar only */
 .navbar .container {
  display: flex;
+ /* The next property adjusts the items to be set on opposite sides with space between them */
  justify-content: space-between;
  align-items: center;
  height: 100%;
 }
 
+/* Changes the text color to white */
 .navbar a {
     color: var(--aWhite);
 }
 
+/* This allows the li to be next to each other */
 .navbar ul {
     display: flex;
     
 }
 
+/* This adds space between the li for a better less crowded look along with adjusting font size. */
 .navbar ul li {
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: larger;
 }
 
+/* This adjusts the container in the main element so the bodyBoxes stack on top of each other */
 main .container {
     display: flex;
     flex-direction: column;
 }
 
+/* This sets the flexbox for bodyBox and seperates the box from the title */
 .bodyBox {
     display: flex;
     margin: 20px 0;
 }
 
+/* This gives padding to the paragraph about me */
 .bodyBox p {
     padding-left: 16px;
 }
 
+/* This sets the title to a set width so the border later on lines up evenly */
 .bodyBox h2 {
     min-width: 162px;
 }
 
+/* This adds padding to the list items in the Contact me section */
 .bodyBox li {
     padding: 0 20px;
 }
 
+/* Changes the link color from the default to white mostly for the subtitle on the images */
 .bodyBox a {
     color: white;
 }
 
+/* This sets those properties to the 3rd body box only */
 .bodyBox:nth-of-type(3) a {
     color: black;
-    font-size: x-large;
+    font-size: large;
     text-decoration: underline var(--jeanBlue);
 }
 
-
+/* This class sets a container for the boxes with the link  */
 .box {
     display: flex;
     flex-wrap: wrap;
@@ -133,20 +142,25 @@ main .container {
     margin-left: 16px;
 }
 
+/* This adds a border on the a element in a box */
 .box a {
     border: 5px solid var(--grayBlue);
 }
 
+/* This sets styling for the project boxes */
 .item {
-    height: 300px;
+    height: 200px;
     color: white;
     margin: 10px 0 ;
     background: var(--grayBlue);
+    background-size: cover;
+    /* This element makes it so it doesn't make a mosaic of the same image */
+    background-repeat: no-repeat;
 }
 
+/* The next 5 classes set images and size for the  */
 .item:nth-of-type(1) {
     background-image: url(../images/study.png);
-    flex-grow: 1 0 0;
     width: 100%;
 }
 
@@ -176,6 +190,7 @@ main .container {
     padding-right: 16px;
 }
 
+/* This media query makes it so when the view finder is at 768px the project boxes stack evenly for a better look for mobile */
 @media (max-width: 768px) {
   
     .box {
